@@ -28,7 +28,7 @@ import com.scwang.smartrefresh.layout.listener.OnRefreshListener;
 
 public class MainActivity extends AppCompatActivity {
 
-    SmartRefreshLayout smartRefresh;
+    YoungRefreshLayout smartRefresh;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,19 +44,21 @@ public class MainActivity extends AppCompatActivity {
         //smartRefresh.setRefreshHeader(new StoreHouseHeader(this)); StoreHouse文字样式
         //smartRefresh.setRefreshHeader(new BezierCircleHeader(this)); 弹出圆圈样式
         //smartRefresh.setRefreshHeader(new BezierRadarHeader(this));
-        smartRefresh.setRefreshHeader(new WaveSwipeHeader(this));
+        //smartRefresh.setRefreshHeader(new WaveSwipeHeader(this));
         //smartRefresh.setRefreshHeader(new TwoLevelHeader(this)); 淘宝二楼
         //smartRefresh.setRefreshHeader(new FunGameBattleCityHeader(this)); 坦克世界
         //smartRefresh.setRefreshHeader(new FunGameHitBlockHeader(this));
         //smartRefresh.setRefreshHeader(new PhoenixHeader(this)); 城市
         //smartRefresh.setRefreshHeader(new TaurusHeader(this)); 飞机
 
+        //smartRefresh.setRefreshHeader(new YoungRefreshHeader(this));
+
 
         //smartRefresh.setRefreshFooter(new BallPulseFooter(this));
-        smartRefresh.setRefreshFooter(new ClassicsFooter(this));
+        //smartRefresh.setRefreshFooter(new ClassicsFooter(this));
 
 
-        smartRefresh.setEnableRefresh(true);
+        //smartRefresh.setEnableRefresh(true);
         smartRefresh.setOnRefreshListener(new OnRefreshListener() {
             @Override
             public void onRefresh(@NonNull RefreshLayout refreshLayout) {
